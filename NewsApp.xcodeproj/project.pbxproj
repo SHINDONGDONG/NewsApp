@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B2081AE273FFF6200CB1CA6 /* NewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2081AD273FFF6200CB1CA6 /* NewsDetailController.swift */; };
 		9B2350032739D45400C47FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2350022739D45400C47FFE /* AppDelegate.swift */; };
 		9B2350052739D45400C47FFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2350042739D45400C47FFE /* SceneDelegate.swift */; };
 		9B2350072739D45400C47FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2350062739D45400C47FFE /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		9B23501A2739D45500C47FFE /* NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2350192739D45500C47FFE /* NewsAppTests.swift */; };
 		9B2350242739D45500C47FFE /* NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2350232739D45500C47FFE /* NewsAppUITests.swift */; };
 		9B2350262739D45500C47FFE /* NewsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2350252739D45500C47FFE /* NewsAppUITestsLaunchTests.swift */; };
+		9BE017982740243C0037DE63 /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE017972740243C0037DE63 /* Webview.swift */; };
 		9BFC1FA92739DA14007212B3 /* Type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC1FA82739DA14007212B3 /* Type1.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,7 @@
 /* Begin PBXFileReference section */
 		9B191A42273DCAF900F059DD /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		9B191A43273DCAF900F059DD /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9B2081AD273FFF6200CB1CA6 /* NewsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailController.swift; sourceTree = "<group>"; };
 		9B234FFF2739D45400C47FFE /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2350022739D45400C47FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B2350042739D45400C47FFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		9B23501F2739D45500C47FFE /* NewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2350232739D45500C47FFE /* NewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITests.swift; sourceTree = "<group>"; };
 		9B2350252739D45500C47FFE /* NewsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BE017972740243C0037DE63 /* Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview.swift; sourceTree = "<group>"; };
 		9BFC1FA82739DA14007212B3 /* Type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,11 +110,13 @@
 				9B2350022739D45400C47FFE /* AppDelegate.swift */,
 				9B2350042739D45400C47FFE /* SceneDelegate.swift */,
 				9B2350062739D45400C47FFE /* ViewController.swift */,
+				9B2081AD273FFF6200CB1CA6 /* NewsDetailController.swift */,
 				9B2350082739D45400C47FFE /* Main.storyboard */,
 				9BFC1FA82739DA14007212B3 /* Type1.swift */,
 				9B23500B2739D45500C47FFE /* Assets.xcassets */,
 				9B23500D2739D45500C47FFE /* LaunchScreen.storyboard */,
 				9B2350102739D45500C47FFE /* Info.plist */,
+				9BE017972740243C0037DE63 /* Webview.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2350072739D45400C47FFE /* ViewController.swift in Sources */,
+				9B2081AE273FFF6200CB1CA6 /* NewsDetailController.swift in Sources */,
 				9BFC1FA92739DA14007212B3 /* Type1.swift in Sources */,
+				9BE017982740243C0037DE63 /* Webview.swift in Sources */,
 				9B2350032739D45400C47FFE /* AppDelegate.swift in Sources */,
 				9B2350052739D45400C47FFE /* SceneDelegate.swift in Sources */,
 			);

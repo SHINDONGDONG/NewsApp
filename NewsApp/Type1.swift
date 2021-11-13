@@ -14,9 +14,6 @@ class Type1 : UITableViewCell {
     
 }
 
-
-
-
 //
 //  ViewController.swift
 //  NewsApp

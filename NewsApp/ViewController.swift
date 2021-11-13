@@ -53,21 +53,42 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return cell
     }
     
+//1.디테일화면 만들기
+//2. 값 보내기 //delegate , segue
+//3. 화면이동 이동하기전에 값을 미리 쎗팅해야한다.
+
+    
+    //클릭감지
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let idx = indexPath.row
+        print("clikedr")
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "NewsDetailController") as! NewsDetailController
+
         if let news = newsData {
-            let row = news[idx]
-            if let r = row as? Dictionary<String,Any> {
-                if let title = r["title"] as? String {
-                    print(title)
+            let indexPath = indexPath.row
+            let row = news[indexPath]
+
+            if let r = row as? Dictionary<String,Any>{
+                if let imageUrl = r["urlToImage"] as? String {
+                    controller.imageUrl = imageUrl
+                }
+                if let desc = r["description"] as? String {
+                    controller.desc = desc
                 }
             }
         }
+        showDetailViewController(controller, sender: nil)
     }
-    
-    
-    
-    
+        
+
+
+//    //세그웨이
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let id =  segue.identifier, "NewsDetail" == id {
+//            if let controller = segue.destination as? NewsDetailController {
+//            }
+//        }
+//    }
     
     
     override func viewDidLoad() {
@@ -77,5 +98,5 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         getNews()
         
     }
-    
 }
+    
